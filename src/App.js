@@ -71,7 +71,7 @@ const deleteTodo = async (id) => {
       <div className={style.container}>
         <h3 className={style.heading}>To-do List</h3>
         <form onSubmit={createTodo} className={style.form}>
-            <input value={input} onChange={(e) =>setInput(e.target.value)} type ='text' placeholder = 'Add To-Do' />
+            <input value={input} onChange={(e) =>setInput(e.target.value)} type ='text' className = {style.input} placeholder = 'Add To-Do' />
           <button className={style.button}><AiOutlinePlus size={30} /></button>
         </form>
         <ul>
